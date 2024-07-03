@@ -21,8 +21,7 @@ pipeline {
         }
         
         stage('Results') {
-            steps {
-                 'mvn test'
+            steps { 
                 testNG()
             }
         }
