@@ -10,7 +10,7 @@ pipeline {
         
         stage('Build') {
             steps {
-                sh 'mvn clean install'
+                  bat 'mvn clean install'
             }
         }
         
@@ -22,8 +22,8 @@ pipeline {
         
         stage('Results') {
             steps {
-                sh 'mvn test'
-                junit '**/target/surefire-reports/*.xml'
+                 'mvn test'
+                testNG()
             }
         }
     }
