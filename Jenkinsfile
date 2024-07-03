@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', credentialsId: 'f22013b5-5da4-43d6-bb6a-a0113def43ee', url: 'https://github.com/Yashwanthraomakthe/TestAutomationFrameworkHomeTask.git'
+                git branch: 'feature', credentialsId: 'f22013b5-5da4-43d6-bb6a-a0113def43ee', url: 'https://github.com/Yashwanthraomakthe/TestAutomationFrameworkHomeTask.git'
             }
         }
         
